@@ -31,7 +31,7 @@ user_table_create = ("""
 	first_name VARCHAR(255),
 	last_name VARCHAR(255),
 	gender CHAR(1),
-	level VARCHAR(255) NOT NULL
+	level VARCHAR(255) NOT NULL UNIQUE
 )""")
 
 song_table_create = ("""
@@ -73,12 +73,11 @@ songplay_table_insert = ("""INSERT INTO songplays (songplay_id, start_time, user
 # Updating the user level on conflict
 user_table_insert = ("""INSERT INTO users (user_id, first_name, last_name, gender, level)
                         VALUES (%s, %s, %s, %s, %s)
-                        ON DUPLICATE KEY UPDATE level = VALUES(level)
+                        ON DUPLICATE KEY UPDATE user_id = VALUES(user_id), level = VALUES(level)
                         """)
 
 song_table_insert = ("""INSERT INTO songs (song_id, title, artist_id, year, duration)
-                        VALUES (%s, %s, %s, %s, %s)
-                        ON DUPLICATE KEY UPDATE""")
+                        VALUES (%s, %s, %s, %s, %s)""")
 
 
 # Artist location, latitude and longitude might change and need to be updated.
@@ -87,8 +86,7 @@ artist_table_insert = ("""INSERT INTO artists (artist_id, name, location, latitu
                         ON DUPLICATE KEY UPDATE location = VALUES(location), latitude = VALUES(latitude), longitude = VALUES(longitude);""")
 
 time_table_insert = ("""INSERT INTO time (start_time, hour, day, week, month, year, weekday)
-                        VALUES (%s, %s, %s, %s, %s, %s, %s)
-                        ON DUPLICATE KEY UPDATE""")
+                        VALUES (%s, %s, %s, %s, %s, %s, %s)""")
 
 # FIND SONGS
 

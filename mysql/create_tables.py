@@ -1,5 +1,7 @@
 import mysql.connector
+from loguru import logger
 from sql_queries import create_table_queries, drop_table_queries
+from config import HOST, PASSWD, USER, DATABASE, AUTH_PLUGIN
 
 
 def create_database():
@@ -9,11 +11,11 @@ def create_database():
     """
     # connect to default database
     conn = mysql.connector.connect(
-        host='localhost',
-        user='tutoruser',
-        passwd='hulkyhulky0910',
-        database='newdb',
-        auth_plugin='mysql_native_password',
+        host=HOST,
+        user=USER,
+        passwd=PASSWD,
+        database=DATABASE,
+        auth_plugin=AUTH_PLUGIN,
         autocommit=True
     )
     cur = conn.cursor()
@@ -28,11 +30,11 @@ def create_database():
 
     # connect to sparkify database
     conn = mysql.connector.connect(
-        host='localhost',
-        user='tutoruser',
-        passwd='hulkyhulky0910',
-        database='sparkifydb',
-        auth_plugin='mysql_native_password',
+        host=HOST,
+        user=USER,
+        passwd=PASSWD,
+        database=DATABASE,
+        auth_plugin=AUTH_PLUGIN,
         autocommit=True
     )
     cur = conn.cursor()
@@ -69,10 +71,10 @@ def main():
     cur, conn = create_database()
 
     drop_tables(cur, conn)
-    print("Table dropped successfully!!")
+    logger.info("Table dropped successfully!")
 
     create_tables(cur, conn)
-    print("Table created successfully!!")
+    logger.info("Table created successfully!")
 
     conn.close()
 
