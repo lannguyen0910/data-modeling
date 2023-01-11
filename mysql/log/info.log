@@ -1,0 +1,154 @@
+2023-01-11 14:12:04.946 | INFO     | create_tables:main:74 - Table dropped successfully!
+2023-01-11 14:12:05.075 | INFO     | create_tables:main:77 - Table created successfully!
+2023-01-11 14:12:05.083 | INFO     | etl:process_data:121 - 60 files found in data/song/song_data
+2023-01-11 14:12:05.100 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAAAW128F429D538.json
+2023-01-11 14:12:05.103 | INFO     | etl:process_data:127 - 1/60 files processed.
+2023-01-11 14:12:05.113 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAABD128F429CF47.json
+2023-01-11 14:12:05.116 | INFO     | etl:process_data:127 - 2/60 files processed.
+2023-01-11 14:12:05.127 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAADZ128F9348C2E.json
+2023-01-11 14:12:05.130 | INFO     | etl:process_data:127 - 3/60 files processed.
+2023-01-11 14:12:05.142 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAAEF128F4273421.json
+2023-01-11 14:12:05.145 | INFO     | etl:process_data:127 - 4/60 files processed.
+2023-01-11 14:12:05.157 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAAFD128F92F423A.json
+2023-01-11 14:12:05.160 | INFO     | etl:process_data:127 - 5/60 files processed.
+2023-01-11 14:12:05.169 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAAMO128F1481E7F.json
+2023-01-11 14:12:05.173 | INFO     | etl:process_data:127 - 6/60 files processed.
+2023-01-11 14:12:05.182 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAAMQ128F1460CD3.json
+2023-01-11 14:12:05.186 | INFO     | etl:process_data:127 - 7/60 files processed.
+2023-01-11 14:12:05.199 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAAPK128E0786D96.json
+2023-01-11 14:12:05.203 | INFO     | etl:process_data:127 - 8/60 files processed.
+2023-01-11 14:12:05.216 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAARJ128F9320760.json
+2023-01-11 14:12:05.222 | INFO     | etl:process_data:127 - 9/60 files processed.
+2023-01-11 14:12:05.236 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\A\TRAAAVG12903CFA543.json
+2023-01-11 14:12:05.241 | INFO     | etl:process_data:127 - 10/60 files processed.
+2023-01-11 14:12:05.257 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABCL128F4286650.json
+2023-01-11 14:12:05.260 | INFO     | etl:process_data:127 - 11/60 files processed.
+2023-01-11 14:12:05.276 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABDL12903CAABBA.json
+2023-01-11 14:12:05.279 | INFO     | etl:process_data:127 - 12/60 files processed.
+2023-01-11 14:12:05.294 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABJL12903CDCF1A.json
+2023-01-11 14:12:05.298 | INFO     | etl:process_data:127 - 13/60 files processed.
+2023-01-11 14:12:05.311 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABJV128F1460C49.json
+2023-01-11 14:12:05.315 | INFO     | etl:process_data:127 - 14/60 files processed.
+2023-01-11 14:12:05.326 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABLR128F423B7E3.json
+2023-01-11 14:12:05.329 | INFO     | etl:process_data:127 - 15/60 files processed.
+2023-01-11 14:12:05.340 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABNV128F425CEE1.json
+2023-01-11 14:12:05.342 | INFO     | etl:process_data:127 - 16/60 files processed.
+2023-01-11 14:12:05.352 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABRB128F9306DD5.json
+2023-01-11 14:12:05.356 | INFO     | etl:process_data:127 - 17/60 files processed.
+2023-01-11 14:12:05.365 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABVM128F92CA9DC.json
+2023-01-11 14:12:05.368 | INFO     | etl:process_data:127 - 18/60 files processed.
+2023-01-11 14:12:05.379 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABXG128F9318EBD.json
+2023-01-11 14:12:05.381 | INFO     | etl:process_data:127 - 19/60 files processed.
+2023-01-11 14:12:05.395 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\B\TRAABYN12903CFD305.json
+2023-01-11 14:12:05.398 | INFO     | etl:process_data:127 - 20/60 files processed.
+2023-01-11 14:12:05.412 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACCG128F92E8A55.json
+2023-01-11 14:12:05.414 | INFO     | etl:process_data:127 - 21/60 files processed.
+2023-01-11 14:12:05.425 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACER128F4290F96.json
+2023-01-11 14:12:05.429 | INFO     | etl:process_data:127 - 22/60 files processed.
+2023-01-11 14:12:05.443 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACFV128F935E50B.json
+2023-01-11 14:12:05.446 | INFO     | etl:process_data:127 - 23/60 files processed.
+2023-01-11 14:12:05.460 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACHN128F1489601.json
+2023-01-11 14:12:05.464 | INFO     | etl:process_data:127 - 24/60 files processed.
+2023-01-11 14:12:05.476 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACIW12903CC0F6D.json
+2023-01-11 14:12:05.479 | INFO     | etl:process_data:127 - 25/60 files processed.
+2023-01-11 14:12:05.490 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACLV128F427E123.json
+2023-01-11 14:12:05.495 | INFO     | etl:process_data:127 - 26/60 files processed.
+2023-01-11 14:12:05.508 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACNS128F14A2DF5.json
+2023-01-11 14:12:05.511 | INFO     | etl:process_data:127 - 27/60 files processed.
+2023-01-11 14:12:05.522 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACOW128F933E35F.json
+2023-01-11 14:12:05.524 | INFO     | etl:process_data:127 - 28/60 files processed.
+2023-01-11 14:12:05.537 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACPE128F421C1B9.json
+2023-01-11 14:12:05.540 | INFO     | etl:process_data:127 - 29/60 files processed.
+2023-01-11 14:12:05.549 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\A\C\TRAACQT128F9331780.json
+2023-01-11 14:12:05.554 | INFO     | etl:process_data:127 - 30/60 files processed.
+2023-01-11 14:12:05.563 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABACN128F425B784.json
+2023-01-11 14:12:05.565 | INFO     | etl:process_data:127 - 31/60 files processed.
+2023-01-11 14:12:05.578 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABAFJ128F42AF24E.json
+2023-01-11 14:12:05.581 | INFO     | etl:process_data:127 - 32/60 files processed.
+2023-01-11 14:12:05.594 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABAFP128F931E9A1.json
+2023-01-11 14:12:05.596 | INFO     | etl:process_data:127 - 33/60 files processed.
+2023-01-11 14:12:05.610 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABAIO128F42938F9.json
+2023-01-11 14:12:05.614 | INFO     | etl:process_data:127 - 34/60 files processed.
+2023-01-11 14:12:05.630 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABATO128F42627E9.json
+2023-01-11 14:12:05.634 | INFO     | etl:process_data:127 - 35/60 files processed.
+2023-01-11 14:12:05.651 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABAVQ12903CBF7E0.json
+2023-01-11 14:12:05.656 | INFO     | etl:process_data:127 - 36/60 files processed.
+2023-01-11 14:12:05.668 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABAWW128F4250A31.json
+2023-01-11 14:12:05.673 | INFO     | etl:process_data:127 - 37/60 files processed.
+2023-01-11 14:12:05.690 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABAXL128F424FC50.json
+2023-01-11 14:12:05.694 | INFO     | etl:process_data:127 - 38/60 files processed.
+2023-01-11 14:12:05.711 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABAXR128F426515F.json
+2023-01-11 14:12:05.715 | INFO     | etl:process_data:127 - 39/60 files processed.
+2023-01-11 14:12:05.732 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\A\TRABAXV128F92F6AE3.json
+2023-01-11 14:12:05.736 | INFO     | etl:process_data:127 - 40/60 files processed.
+2023-01-11 14:12:05.751 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBAM128F429D223.json
+2023-01-11 14:12:05.756 | INFO     | etl:process_data:127 - 41/60 files processed.
+2023-01-11 14:12:05.772 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBBV128F42967D7.json
+2023-01-11 14:12:05.776 | INFO     | etl:process_data:127 - 42/60 files processed.
+2023-01-11 14:12:05.791 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBJE12903CDB442.json
+2023-01-11 14:12:05.794 | INFO     | etl:process_data:127 - 43/60 files processed.
+2023-01-11 14:12:05.811 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBKX128F4285205.json
+2023-01-11 14:12:05.814 | INFO     | etl:process_data:127 - 44/60 files processed.
+2023-01-11 14:12:05.829 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBLU128F93349CF.json
+2023-01-11 14:12:05.833 | INFO     | etl:process_data:127 - 45/60 files processed.
+2023-01-11 14:12:05.846 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBNP128F932546F.json
+2023-01-11 14:12:05.849 | INFO     | etl:process_data:127 - 46/60 files processed.
+2023-01-11 14:12:05.864 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBOP128F931B50D.json
+2023-01-11 14:12:05.867 | INFO     | etl:process_data:127 - 47/60 files processed.
+2023-01-11 14:12:05.881 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBOR128F4286200.json
+2023-01-11 14:12:05.885 | INFO     | etl:process_data:127 - 48/60 files processed.
+2023-01-11 14:12:05.899 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBTA128F933D304.json
+2023-01-11 14:12:05.906 | INFO     | etl:process_data:127 - 49/60 files processed.
+2023-01-11 14:12:05.920 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\B\TRABBVJ128F92F7EAA.json
+2023-01-11 14:12:05.923 | INFO     | etl:process_data:127 - 50/60 files processed.
+2023-01-11 14:12:05.936 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCAJ12903CDFCC2.json
+2023-01-11 14:12:05.940 | INFO     | etl:process_data:127 - 51/60 files processed.
+2023-01-11 14:12:05.953 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCEC128F426456E.json
+2023-01-11 14:12:05.956 | INFO     | etl:process_data:127 - 52/60 files processed.
+2023-01-11 14:12:05.971 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCEI128F424C983.json
+2023-01-11 14:12:05.974 | INFO     | etl:process_data:127 - 53/60 files processed.
+2023-01-11 14:12:05.990 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCFL128F149BB0D.json
+2023-01-11 14:12:05.993 | INFO     | etl:process_data:127 - 54/60 files processed.
+2023-01-11 14:12:06.008 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCIX128F4265903.json
+2023-01-11 14:12:06.011 | INFO     | etl:process_data:127 - 55/60 files processed.
+2023-01-11 14:12:06.026 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCKL128F423A778.json
+2023-01-11 14:12:06.029 | INFO     | etl:process_data:127 - 56/60 files processed.
+2023-01-11 14:12:06.048 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCPZ128F4275C32.json
+2023-01-11 14:12:06.053 | INFO     | etl:process_data:127 - 57/60 files processed.
+2023-01-11 14:12:06.070 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCRU128F423F449.json
+2023-01-11 14:12:06.074 | INFO     | etl:process_data:127 - 58/60 files processed.
+2023-01-11 14:12:06.090 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCTK128F934B224.json
+2023-01-11 14:12:06.096 | INFO     | etl:process_data:127 - 59/60 files processed.
+2023-01-11 14:12:06.112 | INFO     | etl:process_song_file:35 - Records inserted for file D:\Github\data-modelling\mysql\data\song\song_data\A\B\C\TRABCUQ128E0783E2B.json
+2023-01-11 14:12:06.116 | INFO     | etl:process_data:127 - 60/60 files processed.
+2023-01-11 14:12:06.122 | INFO     | etl:process_data:121 - 30 files found in data/song/log_data
+2023-01-11 14:12:06.464 | INFO     | etl:process_data:127 - 1/30 files processed.
+2023-01-11 14:12:09.064 | INFO     | etl:process_data:127 - 2/30 files processed.
+2023-01-11 14:12:10.793 | INFO     | etl:process_data:127 - 3/30 files processed.
+2023-01-11 14:12:13.584 | INFO     | etl:process_data:127 - 4/30 files processed.
+2023-01-11 14:12:20.724 | INFO     | etl:process_data:127 - 5/30 files processed.
+2023-01-11 14:12:23.683 | INFO     | etl:process_data:127 - 6/30 files processed.
+2023-01-11 14:12:26.720 | INFO     | etl:process_data:127 - 7/30 files processed.
+2023-01-11 14:12:29.877 | INFO     | etl:process_data:127 - 8/30 files processed.
+2023-01-11 14:12:35.978 | INFO     | etl:process_data:127 - 9/30 files processed.
+2023-01-11 14:12:37.583 | INFO     | etl:process_data:127 - 10/30 files processed.
+2023-01-11 14:12:38.926 | INFO     | etl:process_data:127 - 11/30 files processed.
+2023-01-11 14:12:42.660 | INFO     | etl:process_data:127 - 12/30 files processed.
+2023-01-11 14:12:49.358 | INFO     | etl:process_data:127 - 13/30 files processed.
+2023-01-11 14:12:56.962 | INFO     | etl:process_data:127 - 14/30 files processed.
+2023-01-11 14:13:05.557 | INFO     | etl:process_data:127 - 15/30 files processed.
+2023-01-11 14:13:12.132 | INFO     | etl:process_data:127 - 16/30 files processed.
+2023-01-11 14:13:14.491 | INFO     | etl:process_data:127 - 17/30 files processed.
+2023-01-11 14:13:16.690 | INFO     | etl:process_data:127 - 18/30 files processed.
+2023-01-11 14:13:21.620 | INFO     | etl:process_data:127 - 19/30 files processed.
+2023-01-11 14:13:27.440 | INFO     | etl:process_data:127 - 20/30 files processed.
+2023-01-11 14:13:35.009 | INFO     | etl:process_data:127 - 21/30 files processed.
+2023-01-11 14:13:36.889 | INFO     | etl:process_data:127 - 22/30 files processed.
+2023-01-11 14:13:41.331 | INFO     | etl:process_data:127 - 23/30 files processed.
+2023-01-11 14:13:47.705 | INFO     | etl:process_data:127 - 24/30 files processed.
+2023-01-11 14:13:48.644 | INFO     | etl:process_data:127 - 25/30 files processed.
+2023-01-11 14:13:52.667 | INFO     | etl:process_data:127 - 26/30 files processed.
+2023-01-11 14:13:57.053 | INFO     | etl:process_data:127 - 27/30 files processed.
+2023-01-11 14:14:03.094 | INFO     | etl:process_data:127 - 28/30 files processed.
+2023-01-11 14:14:08.509 | INFO     | etl:process_data:127 - 29/30 files processed.
+2023-01-11 14:14:13.751 | INFO     | etl:process_data:127 - 30/30 files processed.
