@@ -55,15 +55,13 @@ def process_log_file(cur, filepath):
                      "week", "month", "year", "weekday"]
     time_data = []
     for data in t:
-        data_string = data.strftime('%Y-%m-%d %H:%M:%S')
-        logger.debug(f'Time data: {data}')
-        time_data.append([data_string, data.hour, data.day, data.weekofyear,
+        timestamp = data.strftime('%Y-%m-%d %H:%M:%S')
+        time_data.append([timestamp, data.hour, data.day, data.weekofyear,
                          data.month, data.year, data.day_name()])
 
     time_df = pd.DataFrame.from_records(data=time_data, columns=column_labels)
 
     for _, row in time_df.iterrows():
-        # logger.debug(f"Time row: {row} | Query: {time_table_insert}")
         cur.execute(time_table_insert, list(row))
 
     # load user table
@@ -75,8 +73,6 @@ def process_log_file(cur, filepath):
 
     # insert user records
     for _, row in user_df.iterrows():
-        logger.debug(
-            f"User row: {list(row)} | Query: {user_table_insert}")
         cur.execute(user_table_insert, list(row))
 
     # insert songplay records
@@ -91,9 +87,12 @@ def process_log_file(cur, filepath):
         else:
             songid, artistid = None, None
 
+        timestamp = row.ts
+        timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+
         # insert songplay record
-        songplay_data = (row.ts, row.userId, row.level, songid,
-                         artistid, row.sessionId, row.location, row.userAgent)
+        songplay_data = [timestamp, int(row.userId), row.level, songid,
+                         artistid, row.sessionId, row.location, row.userAgent]
         cur.execute(songplay_table_insert, songplay_data)
 
 
@@ -119,7 +118,7 @@ def process_data(cur, conn, filepath, func):
     # iterate over files and process
     for i, datafile in enumerate(all_files, 1):
         func(cur, datafile)
-        # conn.commit()
+        conn.commit()
         logger.info('{}/{} files processed.'.format(i, num_files))
 
 

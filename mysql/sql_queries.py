@@ -31,7 +31,7 @@ user_table_create = ("""
 	first_name VARCHAR(255),
 	last_name VARCHAR(255),
 	gender CHAR(1),
-	level VARCHAR(255) NOT NULL UNIQUE
+	level VARCHAR(255) NOT NULL
 )""")
 
 song_table_create = ("""
@@ -67,13 +67,13 @@ time_table_create = ("""
 # INSERT RECORDS
 
 songplay_table_insert = ("""INSERT INTO songplays (songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
-                            VALUES (DEFAULT, %s, %s, %s, %s, %s, %s, %s, %s)""")
+                            VALUES (DEFAULT, STR_TO_DATE(%s, '%Y-%m-%d %T'), %s, %s, %s, %s, %s, %s, %s)""")
 
 
 # Updating the user level on conflict
 user_table_insert = ("""INSERT INTO users (user_id, first_name, last_name, gender, level)
 						VALUES (%s, %s, %s, %s, %s)
-						ON DUPLICATE KEY UPDATE level = VALUES(level);""")
+						ON DUPLICATE KEY UPDATE level = VALUES(level)""")
 
 song_table_insert = ("""INSERT INTO songs (song_id, title, artist_id, year, duration)
                         VALUES (%s, %s, %s, %s, %s);""")
