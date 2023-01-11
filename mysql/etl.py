@@ -1,9 +1,6 @@
 import os
 import glob
-from datetime import datetime
-from tqdm import tqdm
 
-import numpy as np
 import pandas as pd
 import mysql.connector
 from loguru import logger
@@ -45,7 +42,7 @@ def process_log_file(cur, filepath):
     :param filepath: complete file path for the file to load
     """
     # open log file
-    df = df = pd.read_json(filepath, lines=True)
+    df = pd.read_json(filepath, lines=True)
 
     # filter by NextSong action
     df = df[df['page'] == "NextSong"].astype({'ts': 'datetime64[ms]'})
@@ -54,26 +51,33 @@ def process_log_file(cur, filepath):
     t = pd.Series(df['ts'], index=df.index)
 
     # insert time data records
-    column_labels = ["timestamp", "hour", "day",
-                     "weekofyear", "month", "year", "weekday"]
+    column_labels = ["start_time", "hour", "day",
+                     "week", "month", "year", "weekday"]
     time_data = []
     for data in t:
-        # logger.debug(f"{data} | Type: {type(data)}")
         data_string = data.strftime('%Y-%m-%d %H:%M:%S')
+        logger.debug(f'Time data: {data}')
         time_data.append([data_string, data.hour, data.day, data.weekofyear,
                          data.month, data.year, data.day_name()])
 
     time_df = pd.DataFrame.from_records(data=time_data, columns=column_labels)
 
     for _, row in time_df.iterrows():
+        # logger.debug(f"Time row: {row} | Query: {time_table_insert}")
         cur.execute(time_table_insert, list(row))
 
     # load user table
     user_df = df[['userId', 'firstName', 'lastName', 'gender', 'level']]
+    user_df['userId'] = user_df['userId'].astype(int)
+    user_df = user_df.rename(columns={'userId': 'user_id',
+                                      'firstName': 'first_name',
+                                      'lastName': 'last_name'})
 
     # insert user records
     for _, row in user_df.iterrows():
-        cur.execute(user_table_insert, row)
+        logger.debug(
+            f"User row: {list(row)} | Query: {user_table_insert}")
+        cur.execute(user_table_insert, list(row))
 
     # insert songplay records
     for _, row in df.iterrows():
@@ -113,9 +117,9 @@ def process_data(cur, conn, filepath, func):
     logger.info('{} files found in {}'.format(num_files, filepath))
 
     # iterate over files and process
-    for i, datafile in tqdm(enumerate(all_files, 1)):
+    for i, datafile in enumerate(all_files, 1):
         func(cur, datafile)
-        conn.commit()
+        # conn.commit()
         logger.info('{}/{} files processed.'.format(i, num_files))
 
 
@@ -129,7 +133,7 @@ def main():
         passwd=PASSWD,
         database=DATABASE,
         auth_plugin=AUTH_PLUGIN,
-        # autocommit=True
+        autocommit=True
     )
     cur = conn.cursor()
 
