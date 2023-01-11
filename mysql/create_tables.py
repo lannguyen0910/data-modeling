@@ -1,5 +1,6 @@
 import mysql.connector
 from loguru import logger
+
 from sql_queries import create_table_queries, drop_table_queries
 from config import HOST, PASSWD, USER, DATABASE, AUTH_PLUGIN
 

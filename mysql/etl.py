@@ -6,7 +6,7 @@ import mysql.connector
 from loguru import logger
 
 from config import HOST, PASSWD, USER, DATABASE, AUTH_PLUGIN
-from sql_queries import *
+from sql_queries import artist_table_insert, user_table_insert, song_table_insert, time_table_insert, songplay_table_insert, song_select
 
 
 def process_song_file(cur, filepath):
