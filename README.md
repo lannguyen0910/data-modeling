@@ -14,7 +14,7 @@ The insights for the data are derived from: [dataset](docs/reports/dataset.md)
 
 ## How to run
 1. Create ```.env``` file based on [env_example](./.env_example) file.
-2. Install MySQL and dependencies
+2. Install MySQL and dependencies.
 ```
 pip3 install -r requirements.txt
 ```
@@ -27,7 +27,7 @@ SET PYTHONPATH=.
 ```
 export PYTHONPATH=.:$PYTHONPATH
 ```
-4. Run python script
+4. Run python script.
 ```python
 python3 src/main.py
 ```
@@ -56,7 +56,7 @@ tests\test_select.py .....                                                      
 
 
 ## Documents
-Some documents about data modeling: [docs](docs/)
+Some documents about data modeling: [docs](docs/materials).
 
 ## References
 - https://github.com/alanchn31/Data-Engineering-Projects.
