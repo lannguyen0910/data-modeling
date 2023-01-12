@@ -1,6 +1,6 @@
 # <p align="center"> Data Modeling with MySQL</p>
 
-<img height="300" src="https://prod-discovery.edx-cdn.org/media/course/image/f33be2a5-322f-4b9c-9ac5-a89b43080427-50e7d5598dac.small.jpeg"/>
+<img height="300" width="100%" src="https://prod-discovery.edx-cdn.org/media/course/image/f33be2a5-322f-4b9c-9ac5-a89b43080427-50e7d5598dac.small.jpeg"/>
 
 ## Overview
 A startup called Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app. We will create a database schema and ETL pipeline for this analysis.
@@ -17,7 +17,7 @@ The insights for the data are derived from: [dataset](docs/reports/dataset.md)
 ```
 pip3 install -r requirements.txt
 ```
-1. Set the PYTHONPATH environment variable to the current directory.
+3. Set the PYTHONPATH environment variable to the current directory.
 - In Windows:
 ```
 SET PYTHONPATH=.
@@ -26,7 +26,7 @@ SET PYTHONPATH=.
 ```
 export PYTHONPATH=.:$PYTHONPATH
 ```
-1. Run python script
+4. Run python script
 ```python
 python3 src/main.py
 ```
