@@ -2,7 +2,7 @@ import mysql.connector
 from loguru import logger
 
 from sql_queries import create_table_queries, drop_table_queries
-from configs import HOST, PASSWD, USER, DATABASE, AUTH_PLUGIN
+from configs import HOST, PASSWD, USER, DATABASE, DEFAULT_DB, AUTH_PLUGIN
 
 
 def create_database():
@@ -15,7 +15,7 @@ def create_database():
         host=HOST,
         user=USER,
         passwd=PASSWD,
-        database=DATABASE,
+        database=DEFAULT_DB,
         auth_plugin=AUTH_PLUGIN,
         autocommit=True
     )
@@ -69,7 +69,8 @@ def main():
     """
     Driver main function.
     """
-    print(f'User: {USER} | Host: {HOST} | Pass: {PASSWD}')
+    print(
+        f'DAtabase: {DATABASE} | User: {USER} | Host: {HOST} | Pass: {PASSWD}')
 
     cur, conn = create_database()
 
