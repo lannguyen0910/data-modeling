@@ -1,6 +1,7 @@
 # <p align="center"> Data Modeling with MySQL</p>
 
-<img height="300" width="100%" src="https://prod-discovery.edx-cdn.org/media/course/image/f33be2a5-322f-4b9c-9ac5-a89b43080427-50e7d5598dac.small.jpeg"/>
+<div stye="text-align:center"><img width="100%" src="https://prod-discovery.edx-cdn.org/media/course/image/f33be2a5-322f-4b9c-9ac5-a89b43080427-50e7d5598dac.small.jpeg"/></div>
+
 
 ## Overview
 A startup called Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app. We will create a database schema and ETL pipeline for this analysis.
