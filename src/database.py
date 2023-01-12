@@ -69,9 +69,6 @@ def main():
     """
     Driver main function.
     """
-    print(
-        f'DAtabase: {DATABASE} | User: {USER} | Host: {HOST} | Pass: {PASSWD}')
-
     cur, conn = create_database()
 
     drop_tables(cur, conn)
