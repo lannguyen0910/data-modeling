@@ -2,7 +2,7 @@ import mysql.connector
 from loguru import logger
 
 from sql_queries import create_table_queries, drop_table_queries
-from config import HOST, PASSWD, USER, DATABASE, AUTH_PLUGIN
+from configs import HOST, PASSWD, USER, DATABASE, AUTH_PLUGIN
 
 
 def create_database():
@@ -21,10 +21,10 @@ def create_database():
     )
     cur = conn.cursor()
 
-    # create sparkify database with UTF8 encoding
-    cur.execute("DROP DATABASE IF EXISTS sparkifydb")
+    # create new database with UTF8 encoding
+    cur.execute(f"DROP DATABASE IF EXISTS {DATABASE}")
     cur.execute(
-        "CREATE DATABASE sparkifydb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_unicode_ci")
+        f"CREATE DATABASE {DATABASE} DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_unicode_ci")
 
     # close connection to default database
     conn.close()
@@ -69,6 +69,8 @@ def main():
     """
     Driver main function.
     """
+    print(f'User: {USER} | Host: {HOST} | Pass: {PASSWD}')
+
     cur, conn = create_database()
 
     drop_tables(cur, conn)

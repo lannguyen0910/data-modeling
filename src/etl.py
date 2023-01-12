@@ -5,7 +5,7 @@ import pandas as pd
 import mysql.connector
 from loguru import logger
 
-from config import HOST, PASSWD, USER, DATABASE, AUTH_PLUGIN
+from configs import HOST, PASSWD, USER, DATABASE, AUTH_PLUGIN
 from sql_queries import artist_table_insert, user_table_insert, song_table_insert, time_table_insert, songplay_table_insert, song_select
 
 
